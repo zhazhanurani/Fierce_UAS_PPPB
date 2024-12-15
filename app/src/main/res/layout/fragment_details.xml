@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="24dp"
+    android:background="@color/red"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+<!--    TITLE-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <View
+            android:layout_width="110dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/forum_title"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="Details"
+            />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+<!--    DETAIL ITEMS-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/pic_catalog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/baseline_local_phone_24"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/khand"
+            android:text="Rp 120.000"
+            android:textSize="24sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/red"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/id_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="18919837913"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/textBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="prada"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textSize="12sp"
+                    android:text="no defect"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="23,5"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/khand"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    BILL -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <View
+                android:layout_width="110dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/red" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/forum_title"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:text="Bill"
+                />
+            <View
+                android:layout_width="110dp"
+                android:layout_height="1dp"
+                android:background="@color/red"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bill_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="ID ITEMS"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:id="@+id/bill_id_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textSize="12sp"
+                    android:text="18919837913"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="ADDRESS"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:id="@+id/bill_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/khand"
+                    android:textSize="12sp"
+                    android:text="18919837913"
+                    android:textColor="@color/red"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/harga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/khand"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="PRICE"
+                        android:textColor="@color/red"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:id="@+id/bill_price_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/khand"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textSize="12sp"
+                        android:text="Rp"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:id="@+id/ongkirharga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/khand"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/harga"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="DELIVERY"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:id="@+id/bill_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/khand"
+                        app:layout_constraintTop_toBottomOf="@id/harga"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="12sp"
+                        android:text="dkaokwok"
+                        android:textColor="@color/red"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/txt_price"
+                android:gravity="end|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total Price"
+                android:textColor="@color/white"
+                android:fontFamily="@font/khand"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/price_total"
+                android:gravity="end|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="23,5"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/khand"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_buy_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+        android:fontFamily="@font/khand"
+        android:backgroundTint="@color/red"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="BUY NOW"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+
+
